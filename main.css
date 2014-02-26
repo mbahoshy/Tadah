@@ -52,6 +52,13 @@ body {
 	background-color: white;	
 }
 
+.page h3 {
+	text-align: center;
+	width: 100%;
+	margin: 0;
+}
+
+
 #slideshow {
 	position:relative !important;
 	top:140px !important;
@@ -105,4 +112,17 @@ body {
 	
 
 	/*border-right: 1px solid rgb(73, 180, 107);*/
+}
+
+.divider-large {
+	width:66.66%;
+	border-bottom: 1px solid #CCCCCC;
+	margin: 40px auto 40px auto;
+}
+
+.third {
+	float:left;
+	width:23.33%;
+	margin:20px 5%;
+	text-align: center;
 }
