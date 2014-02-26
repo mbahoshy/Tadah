@@ -3,6 +3,12 @@ body {
 	/*background-color: rgb(247, 211, 88);*/
 	background-color: rgb(255, 244, 207);
 	font-size: 17px;
+	font-family: arial;
+}
+
+@font-face {
+    font-family: "title";
+    src: url(imgs/GreatVibes-Regular.otf) format("opentype");
 }
 
 #header {
@@ -21,8 +27,10 @@ body {
 	/*font-style: italic;*/
 	padding:0;
 	margin:20px 0 10px 0;
-	font-size: 40px;
+	font-size: 53px;
+	font-family: 'title';
 	float:left;
+	font-weight: normal;
 }
 
 #header h2 {
@@ -32,6 +40,8 @@ body {
 	margin:0 0 0 40px;
 	font-size: 23px;
 	float:left;
+	font-family: georgia;
+	font-weight: normal;
 }
 
 
@@ -56,6 +66,9 @@ body {
 	text-align: center;
 	width: 100%;
 	margin: 0;
+	font-family: georgia;
+	font-weight: normal;
+	font-size: 23px;
 }
 
 
@@ -67,6 +80,7 @@ body {
 #slideshow img {
 	width:98%;
 	padding:1%;
+	box-shadow: 0 16px 26px #CCCCCC;
 }
 
 
@@ -90,17 +104,18 @@ body {
 }
 
 #nav a {
-	border-right: 1px solid rgb(73, 180, 107);
-	border-radius: 8px;	
+	/*border-right: 1px solid rgb(73, 180, 107);*/
+	border-left: 1px solid rgb(73, 180, 107);
 	float:left;
 	width:22.5%;
 	padding:1%;
 	text-align: center;
 	text-decoration: none;
+	color:red;
 }
 
 #nav a:last-child {
-	/*border-right: 1px solid rgb(73, 180, 107);*/
+	border-right: 1px solid rgb(73, 180, 107);
 }
 
 #nav li {
@@ -130,4 +145,8 @@ body {
 .footer {
 	height:400px;
 
+}
+
+.full {
+	width:90%;
 }

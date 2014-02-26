@@ -6,11 +6,11 @@
 		$(window).on('resize', function () {
 			var width = $(window).width();
 			if (width < 800) {
-
+				$('.third').addClass('full');
 			}
 
 			if (width >= 800) {
-
+				$('.third').removeClass('full');
 			}
 		});
 	</script>
