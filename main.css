@@ -16,21 +16,22 @@ body {
 }
 
 #header h1 {
-	width:100%;
-	text-align: center;
+	
+	text-align: left;
 	/*font-style: italic;*/
 	padding:0;
 	margin:20px 0 10px 0;
 	font-size: 40px;
+	float:left;
 }
 
 #header h2 {
-	width:100%;
-	text-align: center;
+	text-align: left;
 	font-style: italic;
 	padding:0;
-	margin:0;
+	margin:0 0 0 40px;
 	font-size: 23px;
+	float:left;
 }
 
 
@@ -53,7 +54,7 @@ body {
 
 #slideshow {
 	position:relative !important;
-	top:180px !important;
+	top:140px !important;
 }
 
 #slideshow img {
@@ -67,29 +68,39 @@ body {
 }
 
 #nav {
-	width:100%;
+	float:right;
+/*	min-width: 500px;
+	max-width: 700px;*/
+	width: 100%;
 }
 
 #nav ul {
-	/*margin:0;*/
+	margin:0;
 	padding:0;
-	max-width: 756px;
-	min-width: 300px;
-	margin-left: auto;
-	margin-right: auto;
+	width:60%;
+	float:right;
+	
 }
 
-#nav li:last-child {
-	border-right: 1px solid rgb(73, 180, 107);	
+#nav a {
+	border-left: 1px solid rgb(73, 180, 107);	
+	float:left;
+	width:22.5%;
+	padding:1%;
+	text-align: center;
+}
+
+#nav a:last-child {
+	border-right: 1px solid rgb(73, 180, 107);
 }
 
 #nav li {
 	display: inline;
 	list-style: none;
-	width:140px;
-	float:left;
-	padding:5px;
 	text-align: center;
-	border-left: 1px solid rgb(73, 180, 107);
+	margin:0;
+	padding:0;
+	
+
 	/*border-right: 1px solid rgb(73, 180, 107);*/
 }
