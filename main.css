@@ -83,15 +83,17 @@ body {
 }
 
 #nav a {
-	border-left: 1px solid rgb(73, 180, 107);	
+	border-right: 1px solid rgb(73, 180, 107);
+	border-radius: 8px;	
 	float:left;
 	width:22.5%;
 	padding:1%;
 	text-align: center;
+	text-decoration: none;
 }
 
 #nav a:last-child {
-	border-right: 1px solid rgb(73, 180, 107);
+	/*border-right: 1px solid rgb(73, 180, 107);*/
 }
 
 #nav li {
