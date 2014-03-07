@@ -60,8 +60,8 @@ body {
 }
 
 .page {
-	width:90%;
-	margin: 0 5%;
+	width:100%;
+	/*margin: 0 5%;*/
 	border: 1px solid #CCCCCC;
 	box-shadow: 2px 2px 2px #CCCCCC;
 	background-color: white;	
@@ -186,7 +186,7 @@ body {
 	margin:0;
 	padding:1% 5%;
 	width:90%;
-	font-size: 23px;
+	font-size: 17px;
 	font-style: italic;
 	font-family: georgia;
 	color: #FFFFFF;
@@ -250,4 +250,8 @@ body {
 	/*float:left;*/
 	text-align: center;
 	color: rgba(0, 0, 0, .5);
+}
+
+.list-item li {
+	display: list-item !important;
 }
