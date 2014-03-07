@@ -1,7 +1,7 @@
 <html>
 <head>
-	<link rel='stylesheet' href="main.css"	/>
-	<script src="scripts/jquery.js"></script>
+	<link rel='stylesheet' href="../main.css"	/>
+	<script src="../scripts/jquery.js"></script>
 	<script type='text/javascript'>
 		$(window).on('resize', function () {
 			var width = $(window).width();
@@ -13,22 +13,33 @@
 				$('.third').removeClass('full');
 			}
 		});
+
+		$(document).on('ready', function () {
+			$('.img-container').on('mouseenter', function (){
+				$(this).children('p').fadeToggle('fast');
+				// alert('butch');
+			});
+			$('.img-container').on('mouseleave', function (){
+				$(this).children('p').fadeToggle('fast');
+				// alert('butch');
+			});
+		});
 	</script>
 </head>
 <body>
 	<div id='header'>
 		<div class='wrapper'>
-			<div id='nav'>
+
 				<h1>Tadah Catering</h1>
 				<div class='clear'></div>
 				<h2>Making life a special event!</h2>
-				<ul>
+<!-- 				<ul>
 					<a href=''><li>Menu</li></a>
 					<a href=''><li>Events</li></a>
 					<a href=''><li>Love Notes</li></a>
 					<a href=''><li>Contact</li></a>
-				</ul>
-			</div>
+				</ul> -->
+
 
 			<div class='clear'></div>
 		</div>
@@ -37,31 +48,43 @@
 	</div>
 	<div class='wrapper'>
 		<div id='slideshow' class='page'>
-			<img src ='imgs/food1.jpg'	/>
-			<div class='divider-large'></div>
-			<h3>Local Catering for Seattle</h3>
-			<div class='clear'></div>
-			<div class='third'>
-				<p>
-					This is a description of how local and fresh the catered food is. Let's talk about some different stuff here describing Tadah Catering and Events. A little bit more text here I think will do the trick.
-				</p>
+			<div class='top-bar' >
+				<ul>
+					<a href='../index.html'><li>Home</li></a>
+					<li>Menus</li>
+					<li>Events</li>
+				</ul>
 			</div>
-			<div class='third'>
-				<p>
-					This is a description of how local and fresh the catered food is. Let's talk about some different stuff here describing Tadah Catering and Events. A little bit more text here I think will do the trick.
-				</p>
-			</div>
-			<div class='third'>
-				<p>
-					This is a description of how local and fresh the catered food is. Let's talk about some different stuff here describing Tadah Catering and Events. A little bit more text here I think will do the trick.
-				</p>
-			</div>
-			<div class='clear'></div>
-			<div class='divider-large'></div>
-			<div class='clear'></div>
+			<p>Welcome to the menu page! Here, you may browse menu items, view photos, and create a list of items to send to Joan and yourself!</p>
+			<h3>Choose a category:</h3>
+			<p>Entree's</p>
+			<p>Breakfast/Brunch</p>
+			<p>Light and elegant</p>
+			<p>Hors d'oeuvres</p>
+			<p>Party Food</p>
+			<p>Gluten Free</p>
+			<p>Vegetarian</p>
+			<p>Vegan</p>
+			<p>Salads</p>
+			<p>Sea Food</p>
+			<p>Course Meals</p>
+			<p>Food Platters</p>
+			<p>Beverage and Alcohol</p>
 		</div>
 	</div>
 
-	<div class='footer'></div>
+	<div class='footer'>
+		<div class='wrapper'>
+			<div class='bottom-nav'>
+				<ul>
+					<li>About</li>
+					<li>Contact</li>
+					<li>Corporate</li>
+					<li>Allergen information</li>
+					<li>Jobs</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

@@ -1,5 +1,6 @@
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 	<link rel='stylesheet' href="main.css"	/>
 	<script src="scripts/jquery.js"></script>
 	<script type='text/javascript'>
@@ -15,6 +16,7 @@
 		});
 
 		$(document).on('ready', function () {
+			$(window).trigger('resize');
 			$('.img-container').on('mouseenter', function (){
 				$(this).children('p').fadeToggle('fast');
 				// alert('butch');
@@ -23,6 +25,11 @@
 				$(this).children('p').fadeToggle('fast');
 				// alert('butch');
 			});
+			$('.img-container').on('touch', function (){
+				$(this).children('p').fadeToggle('fast');
+				// alert('butch');
+			});
+
 		});
 	</script>
 </head>
@@ -51,7 +58,7 @@
 			<div class='top-bar' >
 				<ul>
 					<li>Home</li>
-					<li>Menus</li>
+					<a href='pages/seattle-catering-menu.html'><li>Menus</li></a>
 					<li>Events</li>
 				</ul>
 			</div>
@@ -92,9 +99,9 @@
 			
 			<div class='third'>
 				<p>
-					Food is love, and each and every day we have this big huge fucking talk about food and how much we want to make nasty dirty sex to it. back off ya bitches.
+					"A review goes here ... it talks dramatically about how fucking incredible the food was"
 				</p>
-			</div>
+			</div>			
 
 
 			<div class='divider-large'></div>
@@ -111,13 +118,15 @@
 
 	<div class='footer'>
 		<div class='wrapper'>
-			<ul>
-				<li>About</li>
-				<li>Contact</li>
-				<li>Corporate</li>
-				<li>Allergen information</li>
-				<li>Jobs</li>
-			</ul>
+			<div class='bottom-nav'>
+				<ul>
+					<li>About</li>
+					<li>Contact</li>
+					<li>Corporate</li>
+					<li>Allergen information</li>
+					<li>Jobs</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </body>
