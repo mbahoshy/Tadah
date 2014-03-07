@@ -13,6 +13,17 @@
 				$('.third').removeClass('full');
 			}
 		});
+
+		$(document).on('ready', function () {
+			$('.img-container').on('mouseenter', function (){
+				$(this).children('p').fadeToggle('fast');
+				// alert('butch');
+			});
+			$('.img-container').on('mouseleave', function (){
+				$(this).children('p').fadeToggle('fast');
+				// alert('butch');
+			});
+		});
 	</script>
 </head>
 <body>
@@ -37,10 +48,22 @@
 	</div>
 	<div class='wrapper'>
 		<div id='slideshow' class='page'>
-			<img src ='imgs/food.gif'	/>
+			<div class='top-bar' >
+				<ul>
+					<li>Home</li>
+					<li>Menus</li>
+					<li>Events</li>
+				</ul>
+			</div>
+			<img class='img-full' src ='imgs/plated.gif'	/>
+
+
 			<div class='divider-large'></div>
+
 			<h3>Local Catering for Seattle</h3>
+			
 			<div class='clear'></div>
+			
 			<div class='third'>
 				<p>
 					This is a description of how local and fresh the catered food is. Let's talk about some different stuff here describing Tadah Catering and Events. A little bit more text here I think will do the trick.
@@ -56,12 +79,46 @@
 					This is a description of how local and fresh the catered food is. Let's talk about some different stuff here describing Tadah Catering and Events. A little bit more text here I think will do the trick.
 				</p>
 			</div>
-			<div class='clear'></div>
+			
+
 			<div class='divider-large'></div>
-			<div class='clear'></div>
+
+			<div class='img-container'>
+				<img class='img-full' src='imgs/cupcake.gif'	/>
+				<p>These are some bomb ass mother fuckin cakes!!!</p>
+			</div>
+
+			<div class='divider-large'></div>
+			
+			<div class='third'>
+				<p>
+					Food is love, and each and every day we have this big huge fucking talk about food and how much we want to make nasty dirty sex to it. back off ya bitches.
+				</p>
+			</div>
+
+
+			<div class='divider-large'></div>
+
+			<div class='img-container'>
+				<img class='img-full' src='imgs/zoom_platter.gif'	/>				
+				<p>Made with love ...</p>
+			</div>
+
+			<div class='divider-large'></div>
+
 		</div>
 	</div>
 
-	<div class='footer'></div>
+	<div class='footer'>
+		<div class='wrapper'>
+			<ul>
+				<li>About</li>
+				<li>Contact</li>
+				<li>Corporate</li>
+				<li>Allergen information</li>
+				<li>Jobs</li>
+			</ul>
+		</div>
+	</div>
 </body>
 </html>
