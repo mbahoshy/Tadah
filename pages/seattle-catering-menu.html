@@ -1,52 +1,4 @@
-<html>
-<head>
-	<link rel='stylesheet' href="../main.css"	/>
-	<script src="../scripts/jquery.js"></script>
-	<script type='text/javascript'>
-		$(window).on('resize', function () {
-			var width = $(window).width();
-			if (width < 800) {
-				$('.third').addClass('full');
-			}
 
-			if (width >= 800) {
-				$('.third').removeClass('full');
-			}
-		});
-
-		$(document).on('ready', function () {
-			$('.img-container').on('mouseenter', function (){
-				$(this).children('p').fadeToggle('fast');
-				// alert('butch');
-			});
-			$('.img-container').on('mouseleave', function (){
-				$(this).children('p').fadeToggle('fast');
-				// alert('butch');
-			});
-		});
-	</script>
-</head>
-<body>
-	<div id='header'>
-		<div class='wrapper'>
-
-				<h1>Tadah Catering</h1>
-				<div class='clear'></div>
-				<h2>Making life a special event!</h2>
-<!-- 				<ul>
-					<a href=''><li>Menu</li></a>
-					<a href=''><li>Events</li></a>
-					<a href=''><li>Love Notes</li></a>
-					<a href=''><li>Contact</li></a>
-				</ul> -->
-
-
-			<div class='clear'></div>
-		</div>
-
-
-	</div>
-	<div class='wrapper'>
 		<div id='slideshow' class='page'>
 			<div class='top-bar' >
 				<ul>
@@ -71,20 +23,3 @@
 			<p>Food Platters</p>
 			<p>Beverage and Alcohol</p>
 		</div>
-	</div>
-
-	<div class='footer'>
-		<div class='wrapper'>
-			<div class='bottom-nav'>
-				<ul>
-					<li>About</li>
-					<li>Contact</li>
-					<li>Corporate</li>
-					<li>Allergen information</li>
-					<li>Jobs</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</body>
-</html>

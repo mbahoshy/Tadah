@@ -1,6 +1,7 @@
+<!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<link rel='stylesheet' href="main.css"	/>
 	<script src="scripts/jquery.js"></script>
 	<script src="scripts/jquery.mobile.js"></script>
@@ -36,6 +37,12 @@
 			$('.page').on('swipe', function (){
 				window.location.href = 'http://www.google.com';				
 			});
+			$('.nav-links > a').on('click', function (e) {
+				e.preventDefault();
+				$.get("pages/seattle-catering-menu.html", function(data) {
+					console.dir(data);
+				});
+			});
 
 		});
 	</script>
@@ -63,10 +70,10 @@
 	<div class='wrapper'>
 		<div id='slideshow' class='page'>
 			<div class='top-bar' >
-				<ul>
-					<li>Home</li>
-					<a href='pages/seattle-catering-menu.html'><li>Menus</li></a>
-					<li>Events</li>
+				<ul class='nav-links'>
+					<a href=''><li>Home</li></a>
+					<a href='pages/seattle-catering-menu.html'><li>Events</li></a>
+					<a href=''><li>About</li></a>
 				</ul>
 			</div>
 			<img class='img-full' src ='imgs/plated.gif'	/>
