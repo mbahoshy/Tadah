@@ -3,6 +3,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 	<link rel='stylesheet' href="main.css"	/>
 	<script src="scripts/jquery.js"></script>
+	<script src="scripts/jquery.mobile.js"></script>
 	<script type='text/javascript'>
 		$(window).on('resize', function () {
 			var width = $(window).width();
@@ -27,9 +28,13 @@
 				$(this).children('p').fadeToggle('fast');
 				// alert('butch');
 			});
-			$('.img-container').on('touch', function (){
+			$('.img-container').on('tap', function (){
 				$(this).children('p').fadeToggle('fast');
+				// window.location.href = 'http://www.google.com';	
 				// alert('butch');
+			});
+			$('.page').on('swipe', function (){
+				window.location.href = 'http://www.google.com';				
 			});
 
 		});
@@ -89,6 +94,9 @@
 				</p>
 			</div>
 			
+			<a class ='info-link' href=''>Learn more about food we serve</a>
+
+			
 
 			<div class='divider-large'></div>
 
@@ -103,8 +111,9 @@
 				<p>
 					"A review goes here ... it talks dramatically about how fucking incredible the food was"
 				</p>
-			</div>			
-
+			</div>	
+			<div class='clear'></div>
+			<a class ='info-link' href=''>Read more love notes</a>
 
 			<div class='divider-large'></div>
 

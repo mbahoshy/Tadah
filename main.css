@@ -5,7 +5,11 @@ body {
 	/*background-color: rgb(197, 156, 127);*/
 	background-color: rgb(220, 233, 150);
 	font-size: 17px;
-	font-family: arial;
+	font-family: tahoma;
+}
+
+body p {
+	line-height: 1.5em;
 }
 
 @font-face {
@@ -254,4 +258,11 @@ body {
 
 .list-item li {
 	display: list-item !important;
+}
+
+.info-link {
+	float:right;
+	margin:20px 5%;
+	font-style: italic;
+	text-decoration: none;
 }
